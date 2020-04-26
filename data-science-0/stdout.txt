@@ -1,0 +1,30 @@
+============================= test session starts =============================
+platform win32 -- Python 3.7.4, pytest-5.2.1, py-1.8.0, pluggy-0.13.0 -- C:\Users\andre\Anaconda3\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\andre\codenation\data-science-0
+plugins: arraydiff-0.3, doctestplus-0.4.0, openfiles-0.4.0, remotedata-0.3.2
+collecting ... collected 10 items
+
+test_submit.py::test_q1 PASSED                                           [ 10%]
+test_submit.py::test_q2 PASSED                                           [ 20%]
+test_submit.py::test_q3 PASSED                                           [ 30%]
+test_submit.py::test_q4 PASSED                                           [ 40%]
+test_submit.py::test_q5 PASSED                                           [ 50%]
+test_submit.py::test_q6 PASSED                                           [ 60%]
+test_submit.py::test_q7 PASSED                                           [ 70%]
+test_submit.py::test_q8 PASSED                                           [ 80%]
+test_submit.py::test_q9 PASSED                                           [ 90%]
+test_submit.py::test_q10 PASSED                                          [100%]
+
+============================== warnings summary ===============================
+test_submit.py::test_q7
+  C:\Users\andre\codenation\data-science-0\main.py:120: FutureWarning: `item` has been deprecated and will be removed in a future version
+    sem_nulos = black_friday[black_friday.notnull()]['Product_Category_3'].mode().item()
+
+test_submit.py::test_q9
+  C:\Users\andre\codenation\data-science-0\main.py:154: UserWarning: Pandas doesn't allow columns to be created via a new attribute name - see https://pandas.pydata.org/pandas-docs/stable/indexing.html#attribute-access
+    black_friday.Purchase_padronizada = (black_friday.Purchase - media) / desvio
+
+-- Docs: https://docs.pytest.org/en/latest/warnings.html
+--- generated xml file: C:\Users\andre\codenation\data-science-0\output.xml ---
+======================= 10 passed, 2 warnings in 1.67s ========================
