@@ -1,0 +1,5 @@
+{
+  "test_main.py::test_q2": true,
+  "test_main.py::test_q5": true,
+  "test_submit.py::test_q5": true
+}
